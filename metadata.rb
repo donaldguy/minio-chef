@@ -5,5 +5,7 @@ license 'apache2'
 description 'Installs/Configures minio.io'
 long_description 'Installs/Configures minio'
 version '0.1.0'
+issues_url 'https://github.com/donaldguy/minio-chef/issues'
+source_url 'https://github.com/donaldguy/minio-chef'
 
 depends 'poise-service'
