@@ -1,0 +1,21 @@
+---
+driver_plugin: digitalocean
+driver_config:
+  size: 512mb
+  require_chef_omnibus: latest
+provisioner:
+    name: chef_zero
+
+platforms:
+- name: debian-8.2
+  provisioner:
+    sudo: false
+  busser:
+    sudo: false
+- name: ubuntu-15.10
+suites:
+  - name: default
+    run_list:
+    - recipe[minio]
+    attributes:
+
