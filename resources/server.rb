@@ -34,7 +34,7 @@ action :create do
 
   poise_service service_name do
     provider service_provider
-    command "#{binary_path} server --address #{address} #{data_dir}"
+    command "#{binary_path} --address #{address} server #{data_dir}"
     user user_name
     action [:enable, :start]
   end
